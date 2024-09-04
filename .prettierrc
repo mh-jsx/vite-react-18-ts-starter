@@ -3,6 +3,24 @@
     "trailingComma": "es5",
     "printWidth": 120,
     "tabWidth": 2,
-    "semi": true
+    "semi": true,
+    "plugins": ["@trivago/prettier-plugin-sort-imports"],
+    "importOrder": [
+    "^react$",
+    "<THIRD_PARTY_MODULES>",
+    "^config/(.*)$",
+    "^src/store/(.*)$",
+    "^src/components/(.*)$",
+    "^src/context/(.*)$",
+    "^src/hooks/(.*)$",
+    "^src/helpers|utils/(.*)$",
+    "^src/pages/(.*)$",
+    "^src/assets/(.*)$",
+    "^[./]((?!.(sc|sa|c)ss)(?!.json).)*$",
+    "\\.json$",
+    "\\.(sc|sa|c)ss$"
+  ],
+    "importOrderSeparation": true,
+    "importOrderSortSpecifiers": true
   }
   
