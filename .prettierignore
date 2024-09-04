@@ -1,0 +1,14 @@
+node_modules
+build
+dist
+
+nginx.conf
+vite.config.js
+package.json
+package-lock.json
+yarn.lock
+docker-compose.yml
+Dockerfile
+azure-pipelines.yml
+*.sh
+eslintrc.*
