@@ -5,3 +5,5 @@ public/
 *.config.js
 *.config.ts
 azure-pipelines.yml
+
+src/vite.env.d.ts
