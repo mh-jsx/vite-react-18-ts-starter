@@ -13,7 +13,7 @@
     "prettier": "prettier --check 'src/**/*.{js,jsx,ts,tsx}'",
     "prettier:fix": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
     "test": "npm run lint && npm run prettier",
-    "prepare": "husky"
+     "prepare": "mkdir -p .husky && chmod -R +x .husky"
   },
   "dependencies": {
     "react": "^18.3.1",
