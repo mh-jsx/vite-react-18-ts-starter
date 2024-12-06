@@ -2,7 +2,7 @@ module.exports = {
   extends: ['@commitlint/config-conventional'],
   rules: {
     'type-enum': [
-      1, // Error level
+      2, // Error level
       'always',
       [
         'feat', // A new feature

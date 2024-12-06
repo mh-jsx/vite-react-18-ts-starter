@@ -13,7 +13,8 @@
     "prettier": "prettier --check 'src/**/*.{js,jsx,ts,tsx}'",
     "prettier:fix": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
     "test": "npm run lint && npm run prettier",
-     "prepare": "mkdir -p .husky && chmod -R +x .husky"
+    "prepare": "mkdir -p .husky && chmod -R +x .husky",
+    "commit": "cz"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -27,7 +28,9 @@
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@typescript-eslint/parser": "^7.18.0",
     "@vitejs/plugin-react": "^4.3.1",
+    "commitizen": "^4.3.1",
     "commitlint": "^19.6.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.57.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^18.0.0",
@@ -47,12 +50,29 @@
     "vite-plugin-svgr": "^4.2.0",
     "vite-tsconfig-paths": "^5.0.1"
   },
- "lint-staged": {
-  "*.ts": ["eslint"],
-  "*.tsx": ["eslint"],
-  "*.js": ["eslint"],
-  "*.jsx": ["eslint"],
-  "*.css": ["prettier --check"],
-  "*.json": ["prettier --check"]
+  "lint-staged": {
+    "*.ts": [
+      "eslint"
+    ],
+    "*.tsx": [
+      "eslint"
+    ],
+    "*.js": [
+      "eslint"
+    ],
+    "*.jsx": [
+      "eslint"
+    ],
+    "*.css": [
+      "prettier --check"
+    ],
+    "*.json": [
+      "prettier --check"
+    ]
+  },
+  "config": {
+  "commitizen": {
+    "path": "./node_modules/cz-conventional-changelog"
+  }
 }
 }
