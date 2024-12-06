@@ -1,7 +1,7 @@
 {
   "name": "vite-starter",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "scripts": {
     "start": "vite",
@@ -14,7 +14,8 @@
     "prettier:fix": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
     "test": "npm run lint && npm run prettier",
     "prepare": "mkdir -p .husky && chmod -R +x .husky",
-    "commit": "cz"
+    "commit": "cz",
+    "release": "standard-version"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -48,6 +49,7 @@
     "husky": "^9.1.7",
     "prettier": "^3.3.3",
     "semantic-release": "^24.2.0",
+    "standard-version": "^9.5.0",
     "typescript": "^5.5.4",
     "vite": "^5.4.1",
     "vite-plugin-svgr": "^4.2.0",
