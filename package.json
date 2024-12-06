@@ -15,7 +15,8 @@
     "test": "npm run lint && npm run prettier",
     "prepare": "mkdir -p .husky && chmod -R +x .husky",
     "commit": "cz",
-    "release": "standard-version"
+    "release-standard": "standard-version",
+    "release": "npx semantic-release && git push --follow-tags"
   },
   "dependencies": {
     "react": "^18.3.1",
