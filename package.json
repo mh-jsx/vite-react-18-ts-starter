@@ -47,11 +47,12 @@
     "vite-plugin-svgr": "^4.2.0",
     "vite-tsconfig-paths": "^5.0.1"
   },
-  "lint-staged": {
-  "*.ts": ["eslint --fix", "prettier --write"],
-  "*.tsx": ["eslint --fix", "prettier --write"],
-  "*.js": ["eslint --fix", "prettier --write"],
-  "*.jsx": ["eslint --fix", "prettier --write"],
-  "*.css": ["stylelint --fix"]
+ "lint-staged": {
+  "*.ts": ["eslint"],
+  "*.tsx": ["eslint"],
+  "*.js": ["eslint"],
+  "*.jsx": ["eslint"],
+  "*.css": ["prettier --check"],
+  "*.json": ["prettier --check"]
 }
 }
