@@ -9,3 +9,4 @@ azure-pipelines.yml
 src/vite.env.d.ts
 
 commitlint.config.cjs
+vite.config.ts

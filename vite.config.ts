@@ -69,9 +69,6 @@ export default defineConfig(({ mode }) => {
       outDir: 'build',
       sourcemap: env.VITE_SOURCE_MAP === 'true',
     },
-    esbuild: {
-      drop: ['console', 'debugger'],
-    },
     server: {
       port: +env.VITE_PORT,
       strictPort: true,

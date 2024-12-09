@@ -1,7 +1,6 @@
+import AuthRoutes from 'auth';
 import { config } from 'config';
 import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom';
-
-import AuthRoutes from 'auth/auth-routes';
 
 import ErrorBoundary from './error-boundary';
 import PrivateRoutes from './private-routes';

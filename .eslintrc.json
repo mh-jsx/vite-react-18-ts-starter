@@ -16,7 +16,7 @@
     "airbnb-typescript",
     "prettier",
     "eslint-config-prettier",
-    "plugin:prettier/recommended" 
+    "plugin:prettier/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -34,6 +34,7 @@
     "eslint-comments",
     "prettier",
     "react-refresh"
+    
   ],
   "rules": {
     "prettier/prettier": "error",
@@ -69,7 +70,8 @@
     "react/jsx-props-no-spreading": "off",
     "react/require-default-props": "off",
     "react/jsx-key": "warn",
-    "import/no-absolute-path": "off"
+    "import/no-absolute-path": "off",
+    "import/prefer-default-export" : "off"
   },
   "settings": {
     "react": {
