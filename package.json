@@ -19,8 +19,12 @@
     "release": "npx semantic-release && git push --follow-tags"
   },
   "dependencies": {
+    "antd": "^5.22.3",
+    "less": "^4.2.1",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.0.2",
+    "vite-plugin-pwa": "^0.21.1"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^19.6.0",
@@ -32,6 +36,7 @@
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@typescript-eslint/parser": "^7.18.0",
     "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.20",
     "commitizen": "^4.3.1",
     "commitlint": "^19.6.0",
     "cz-conventional-changelog": "^3.3.0",
@@ -48,9 +53,13 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.11",
     "husky": "^9.1.7",
+    "lint-staged": "^15.2.10",
+    "postcss": "^8.4.49",
     "prettier": "^3.3.3",
     "semantic-release": "^24.2.0",
     "standard-version": "^9.5.0",
+    "tailwindcss": "^3.4.16",
+    "tailwindcss-animate": "^1.0.7",
     "typescript": "^5.5.4",
     "vite": "^5.4.1",
     "vite-plugin-svgr": "^4.2.0",
@@ -70,9 +79,6 @@
       "eslint"
     ],
     "*.css": [
-      "prettier --check"
-    ],
-    "*.json": [
       "prettier --check"
     ]
   },

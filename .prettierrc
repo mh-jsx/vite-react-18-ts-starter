@@ -1,26 +1,31 @@
 {
-    "singleQuote": true,
-    "trailingComma": "es5",
-    "printWidth": 120,
-    "tabWidth": 2,
-    "semi": true,
-    "plugins": ["@trivago/prettier-plugin-sort-imports"],
-    "importOrder": [
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "printWidth": 120,
+  "tabWidth": 2,
+  "semi": true,
+  "plugins": ["@trivago/prettier-plugin-sort-imports"],
+  "importOrder": [
     "^react$",
     "<THIRD_PARTY_MODULES>",
-    "^config/(.*)$",
-    "^src/store/(.*)$",
-    "^src/components/(.*)$",
-    "^src/context/(.*)$",
-    "^src/hooks/(.*)$",
-    "^src/helpers|utils/(.*)$",
-    "^src/pages/(.*)$",
-    "^src/assets/(.*)$",
+    "^assets/(.*)$",
+    "^constants/(.*)$",
+    "^configs/(.*)$",
+    "^auth/(.*)$",
+    "^utils/(.*)$",
+    "^helpers/(.*)$",
+    "^types/(.*)$",
+    "^store/(.*)$",
+    "^context/(.*)$",
+    "^hooks/(.*)$",
+    "^app/(.*)$",
+    "^api/(.*)$",
+    "^components/(.*)$",
+    "^pages/(.*)$",
     "^[./]((?!.(sc|sa|c)ss)(?!.json).)*$",
     "\\.json$",
     "\\.(sc|sa|c)ss$"
   ],
-    "importOrderSeparation": true,
-    "importOrderSortSpecifiers": true
-  }
-  
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
+}

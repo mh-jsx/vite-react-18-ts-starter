@@ -15,6 +15,7 @@
     "airbnb/hooks",
     "airbnb-typescript",
     "prettier",
+    "eslint-config-prettier",
     "plugin:prettier/recommended" 
   ],
   "parser": "@typescript-eslint/parser",
