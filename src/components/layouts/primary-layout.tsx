@@ -1,9 +1,9 @@
 import { Outlet } from 'react-router-dom';
 
-function Layout() {
+function PrimaryLayout() {
   return (
     <div>
-      private layout
+      private Primary layout
       <header>header</header>
       <main>
         <Outlet />
@@ -12,4 +12,4 @@ function Layout() {
   );
 }
 
-export default Layout;
+export default PrimaryLayout;
