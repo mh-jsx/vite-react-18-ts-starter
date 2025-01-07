@@ -1,7 +1,7 @@
 {
   "name": "vite-starter",
   "private": true,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "module",
   "scripts": {
     "start": "vite",
@@ -15,7 +15,7 @@
     "test": "npm run lint && npm run prettier",
     "prepare": "mkdir -p .husky && chmod -R +x .husky",
     "commit": "cz",
-    "release-standard": "standard-version",
+    "release-standard": "standard-version && git push --follow-tags",
     "release": "npx semantic-release && git push --follow-tags"
   },
   "dependencies": {
