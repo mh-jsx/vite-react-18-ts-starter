@@ -1,7 +1,7 @@
 {
   "name": "vite-starter",
   "private": true,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "scripts": {
     "start": "vite",
@@ -82,18 +82,24 @@
     }
   },
   "release": {
-  "branches": ["development"],
-  "plugins": [
-    "@semantic-release/commit-analyzer",
-    "@semantic-release/release-notes-generator",
-    "@semantic-release/changelog",
-    [
-      "@semantic-release/git",
-      {
-        "assets": ["CHANGELOG.md", "package.json", "package-lock.json"],
-        "message": "chore(release): ${nextRelease.version}"
-      }
+    "branches": [
+      "development"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "CHANGELOG.md",
+            "package.json",
+            "package-lock.json"
+          ],
+          "message": "chore(release): ${nextRelease.version}"
+        }
+      ]
     ]
-  ]
-}
+  }
 }
